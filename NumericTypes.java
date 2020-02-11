@@ -40,6 +40,7 @@ public class NumericTypes {
 																						 */
 		System.out.println("\nPlease enter a tempreture in Degrees F:"); 
 		double inputTempInFar = input.nextDouble();																											
+		input.close();
 		
 		fToC = (5.0/9.0) * (inputTempInFar - 32.0); 											// convert the user’s temperature to Celsius
 		output = "\n\t" + inputTempInFar + " in Fahrenheit is " + fToC + " degrees Celsius."; 	// print the user’s temperature in Celsius
